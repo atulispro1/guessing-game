@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Guess the Number Game</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <link rel="stylesheet" href="style.css">
+
 <body>
   <div class="container">
     <h1>🔢 Guess the Number!</h1>
+
     <div id="startScreen" class="screen">
       <p>Enter the maximum number for the challenge:</p>
       <input type="number" id="maxNumber" min="1" placeholder="Maximum number" required />
@@ -16,11 +17,14 @@
     </div>
 
     <div id="gameScreen" class="screen hidden">
-      <p class="instruction">I'm thinking of a number between 1 and <span id="displayMax"></span>.<br>
-      Can you guess it?</p>
+      <p class="instruction">
+        I'm thinking of a number between 1 and <span id="displayMax"></span>.<br />
+        Can you guess it?
+      </p>
       <input type="number" id="guessInput" placeholder="Your guess..." />
       <button id="guessBtn">Guess</button>
       <button id="quitBtn">Quit</button>
+      <button id="showAnswerBtn">Show Answer</button>
       <div id="feedback" class="feedback"></div>
     </div>
 
@@ -29,6 +33,7 @@
       <button id="playAgainBtn">Play Again</button>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>

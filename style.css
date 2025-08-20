@@ -1,95 +1,112 @@
-body {
-  background: linear-gradient(120deg, #58cfff, #ffd76e, #f97090, #87ff9f);
-  background-size: 300% 300%;
-  animation: gradientMove 18s ease infinite;
-  font-family: 'Segoe UI', sans-serif;
-  min-height: 100vh;
-  margin: 0;
-}
-@keyframes gradientMove {
-  0%,100% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-}
-.container {
-  max-width: 340px;
-  margin: 4.5rem auto;
-  background: rgba(255,255,255,0.96);
-  border-radius: 24px;
-  box-shadow: 0 6px 32px #1087b425;
-  padding: 2.2rem 2rem 1.8rem 2rem;
-  text-align: center;
-}
-h1 {
-  color: #2f415b;
-  margin-top: 0;
-  margin-bottom: 1.2em;
-  font-size: 2.2rem;
-  letter-spacing: 0.05em;
-  text-shadow: 0 2px 10px #ffefd680;
-}
-.screen {animation: fadeIn 0.7s;}
-@keyframes fadeIn {
-  from {opacity:0; transform: translateY(15px);}
-  to {opacity:1; transform: translateY(0);}
-}
-.hidden {display: none;}
-input[type=number] {
-  width: 110px;
-  margin: 0.6em 0.5em 1.1em 0;
-  padding: 0.42em 0.58em;
-  font-size: 1.13rem;
-  border: 1.6px solid #98bfd6;
-  border-radius: 7px;
-  background: #f6fcff;
-  color: #2f415b;
-  box-shadow: 0 1px 7px #3fbbe014;
-  outline: none;
-  transition: border 0.2s;
-}
-input[type=number]:focus {
-  border: 1.6px solid #58cfff;
-}
-button {
-  padding: 0.7em 1.5em;
-  border: none;
-  border-radius: 9px;
-  font-size: 1.12rem;
-  font-weight: 600;
-  color: #fff;
-  margin: 0.5em 0.5em 0 0;
-  background: linear-gradient(90deg,#58cfff,#62ec90);
-  box-shadow: 0 2px 12px #47d0ff33;
-  cursor: pointer;
-  transition: background 0.22s, transform 0.23s;
-  outline: none;
-}
-button:hover:not(:disabled) {
-  background: linear-gradient(90deg, #62ec90,#58cfff);
-  transform: scale(1.05);
-}
-button:disabled {opacity: 0.7;}
-.instruction {
-  color: #17707c;
-  font-size: 1.13rem;
-  margin: 1.2em 0 1em 0;
-}
-.feedback {
-  font-size: 1.18rem;
-  margin-top: 1em;
-  min-height: 1.8em;
-  color: #cf2087;
-  font-weight: 700;
-  animation: popIn .6s;
-}
-@keyframes popIn {
-  from {opacity: 0; transform: scale(0.97);}
-  to   {opacity: 1; transform: scale(1);}
-}
-#endMessage {
-  font-size: 1.45rem;
-  font-weight: 700;
-  color: #198f4d;
-  margin: 2.1em 0 1.4em 0;
-  min-height: 2.5em;
-  animation: fadeIn .7s;
-}
+    body {
+      background: linear-gradient(120deg, #58cfff, #ffd76e, #f97090, #87ff9f);
+      background-size: 300% 300%;
+      animation: gradientMove 18s ease infinite;
+      font-family: 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      margin: 0;
+    }
+    @keyframes gradientMove {
+      0%,100% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+    }
+    .container {
+      max-width: 340px;
+      margin: 4.5rem auto;
+      background: rgba(255,255,255,0.96);
+      border-radius: 24px;
+      box-shadow: 0 6px 32px #1087b425;
+      padding: 2.2rem 2rem 1.8rem 2rem;
+      text-align: center;
+    }
+    h1 {
+      color: #2f415b;
+      margin-top: 0;
+      margin-bottom: 1.2em;
+      font-size: 2.2rem;
+      letter-spacing: 0.05em;
+      text-shadow: 0 2px 10px #ffefd680;
+    }
+    .screen {animation: fadeIn 0.7s;}
+    @keyframes fadeIn {
+      from {opacity:0; transform: translateY(15px);}
+      to {opacity:1; transform: translateY(0);}
+    }
+    .hidden {display: none;}
+    input[type=number] {
+      width: 110px;
+      margin: 0.6em 0.5em 1.1em 0;
+      padding: 0.42em 0.58em;
+      font-size: 1.13rem;
+      border: 1.6px solid #98bfd6;
+      border-radius: 7px;
+      background: #f6fcff;
+      color: #2f415b;
+      box-shadow: 0 1px 7px #3fbbe014;
+      outline: none;
+      transition: border 0.2s;
+    }
+    input[type=number]:focus {
+      border: 1.6px solid #58cfff;
+    }
+    button {
+      padding: 0.7em 1.5em;
+      border: none;
+      border-radius: 9px;
+      font-size: 1.12rem;
+      font-weight: 600;
+      color: #fff;
+      margin: 0.5em 0.5em 0 0;
+      background: linear-gradient(90deg,#58cfff,#62ec90);
+      box-shadow: 0 2px 12px #47d0ff33;
+      cursor: pointer;
+      transition: background 0.22s, transform 0.23s;
+      outline: none;
+    }
+    button:hover:not(:disabled) {
+      background: linear-gradient(90deg,#62ec90,#58cfff);
+      transform: scale(1.05);
+    }
+    button:disabled {opacity: 0.7;}
+    .instruction {
+      color: #17707c;
+      font-size: 1.13rem;
+      margin: 1.2em 0 1em 0;
+    }
+    .feedback {
+      font-size: 1.18rem;
+      margin-top: 1em;
+      min-height: 1.8em;
+      color: #cf2087;
+      font-weight: 700;
+      animation: popIn .6s;
+    }
+    @keyframes popIn {
+      from {opacity: 0; transform: scale(0.97);}
+      to   {opacity: 1; transform: scale(1);}
+    }
+    #endMessage {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #198f4d;
+      margin: 2.1em 0 1.4em 0;
+      min-height: 2.5em;
+      animation: fadeIn .7s;
+    }
+    /* Show Answer button style */
+    #showAnswerBtn {
+      background: #f5a623;
+      color: white;
+      border: none;
+      border-radius: 7px;
+      padding: 0.65em 1.5em;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 0.7em;
+      transition: background 0.3s ease;
+      outline: none;
+    }
+    #showAnswerBtn:hover {
+      background: #d48806;
+    }
